@@ -1,0 +1,129 @@
+// $gradient-color: linear-gradient(
+//   90deg,
+//   #ff3ba0,
+//   #eb0079,
+//   #ff0083,
+//   #ffc4e2,
+//   #ff3ba0,
+//   #eb0079,
+//   #b1005b
+// );
+
+.au-main-container {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 120vh;
+  z-index: -1;
+  // position: fixed;
+  background-image: linear-gradient(
+    0deg,
+    rgba(145, 9, 10, 1) 0%,
+    rgba(20, 20, 20, 1) 80%
+  );
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: "SpacePowerDemoRegular";
+    padding-bottom: 20px;
+    // margin: 0.5rem;
+    padding: 0%;
+    // font-weight: 900;
+    // color: #ff0083;
+  }
+}
+.au-main-container-inner-div {
+  min-width: 300px;
+  max-width: 1200px;
+  // width: 100%;
+  margin: 0 auto;
+  height: auto;
+  min-height: 120vh;
+  padding: 10px;
+  padding-top: 50px;
+}
+.au-grid-container {
+  padding-top: 3rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  padding-bottom: 1rem;
+
+  .au-grid-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .au-user-image {
+      position: relative;
+      width: 100%;
+      height: 20rem;
+      img {
+        border-radius: 20px;
+      }
+      .au-middle-p {
+        overflow: hidden;
+        box-sizing: border-box;
+        top: auto;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        padding: 10px;
+        bottom: 10px;
+        background-color: rgba(35, 35, 35, 0.5);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+      }
+      .au-middle {
+        h2 {
+          margin: 5% 0;
+          font-size: 1rem;
+          font-weight: 500;
+          font-family: "FontsFree-Net-Poppins-Regular";
+        }
+        h4 {
+          font-size: 0.7rem;
+          margin: 0;
+          font-family: "FontsFree-Net-Poppins-Regular";
+        }
+      }
+      .au-middle-p:before {
+        position: absolute;
+        content: "";
+        background-color: #fe0000;
+        left: 0;
+        top: 50%;
+        height: 100%;
+        width: 8px;
+        transform: translateY(-50%);
+      }
+      .text {
+        background-color: white;
+        padding: 16px 32px;
+        border-radius: 10px;
+        svg.ps-video-play-svg {
+          fill: #fe0000;
+        }
+      }
+    }
+    .au-user-image:hover {
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .au-main-container-inner-div {
+    min-width: 300px;
+    max-width: 1200px;
+    // width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px;
+    padding-top: 50px;
+  }
+}

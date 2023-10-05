@@ -1,0 +1,139 @@
+$gradient-color: linear-gradient(
+  90deg,
+  #fe0000,
+  #f71f1f,
+  #e75353,
+  #f71f1f,
+  #fe0000,
+  #f71f1f
+);
+
+.cn-main-container {
+  // min-height: 100vh;
+  padding: 10px;
+  padding-top: 90px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 120vh;
+  z-index: -1;
+  // position: fixed;
+  background-image: linear-gradient(
+    0deg,
+    rgba(145, 9, 10, 1) 0%,
+    rgba(20, 20, 20, 1) 80%
+  );
+  h1 {
+    color: #ff0000;
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+  .cs-main-div {
+    width: 100%;
+  }
+  .cn-left-container,
+  .cn-right-container {
+    // min-height: 90vh;
+    // height: 80vh;
+    // margin: 10%;
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    padding: 20px;
+    height: 70vh;
+    // min-height: 62vh;
+    max-width: 900px;
+    align-items: center;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    .cn-left-label {
+      display: flex;
+      font-family: "FontsFree-Net-Poppins-Regular";
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 20px;
+    }
+    button.cn-convert-button {
+      margin: 0.7rem 0.5rem;
+      // background: none;
+      border: none;
+      font-family: "FontsFree-Net-Poppins-Regular";
+      border-radius: 5px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.4rem 1.5rem;
+      background: $gradient-color;
+      background-size: 600% 200%;
+      animation: gradient 4s linear infinite;
+      animation-direction: alternate;
+    }
+    textarea {
+      color: white;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.15);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      font-size: 1rem;
+      padding: 10px;
+      font-family: "FontsFree-Net-Poppins-Regular";
+      margin: 10px;
+      border: none;
+    }
+    video.nft-stream-video {
+      width: 40%;
+      border-radius: 20px;
+      height: 80vh;
+    }
+    input {
+      color: white;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.15);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      font-size: 1rem;
+      padding: 10px;
+      font-family: "FontsFree-Net-Poppins-Regular";
+      margin: 10px;
+      border: none;
+    }
+  }
+  .cn-right-container {
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 70vh;
+    padding: 20px;
+    // min-height: 70vh;
+    min-width: 300px;
+    max-width: 900px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+  .cn-video-stream-nft {
+    min-width: 200px;
+    max-width: 900px;
+    width: 60%;
+
+    border-radius: 20px;
+  }
+}

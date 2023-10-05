@@ -1,0 +1,151 @@
+$gradient-color: linear-gradient(
+  90deg,
+  #fe0000,
+  #f71f1f,
+  #e75353,
+  #f71f1f,
+  #fe0000,
+  #f71f1f
+);
+
+.nft-main-container {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  z-index: -1;
+  // position: fixed;
+  background-image: linear-gradient(
+    0deg,
+    rgba(145, 9, 10, 1) 0%,
+    rgba(20, 20, 20, 1) 80%
+  );
+}
+.nft-main-container-inner-div {
+  min-width: 300px;
+  max-width: 1200px;
+  // width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: 10px;
+  padding-top: 50px;
+}
+.nft-header {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  // margin-top: 20px;
+  flex-direction: column;
+
+  .t-header {
+    color: white;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: "SpacePowerDemoRegular";
+  }
+}
+.nft-main-content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding-bottom: 3rem;
+}
+.nft-content {
+  display: flex;
+  flex-direction: column;
+  // justify-content: flex-start;
+  align-items: center;
+  // background-color: #2f2f2f;
+  // border-radius: 20px;
+  padding: 10px;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid gray;
+}
+// .nft-content:hover {
+//   background-color: #030303;
+// }
+.nft-video {
+  width: auto;
+  height: auto;
+}
+.nft-video div {
+  width: 100% !important;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  // padding-top: 20px;
+}
+.nft-user {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.nft-user img {
+  border-radius: 50%;
+  height: 30px;
+}
+.nft-user button:hover {
+  background-color: #fe0000;
+  font-family: "FontsFree-Net-Poppins-Regular";
+}
+.nft-user button {
+  color: white;
+}
+
+.nft-content button {
+  width: 30%;
+  font-family: "FontsFree-Net-Poppins-Regular";
+  height: 35px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background: $gradient-color;
+  background-size: 600% 200%;
+  animation: gradient 4s linear infinite;
+  animation-direction: alternate;
+  // border-color: none;
+  border: none;
+  font-size: 0.9rem;
+}
+.nft-img-name {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: "FontsFree-Net-Poppins-Regular";
+  span {
+    padding-left: 1rem;
+    font-family: "FontsFree-Net-Poppins-Regular";
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nft-main-container-inner-div {
+    min-width: 300px;
+    max-width: 1200px;
+    // width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px;
+    padding-top: 50px;
+  }
+  .nft-main-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    gap: 4rem;
+    width: 78%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding-bottom: 3rem;
+  }
+}

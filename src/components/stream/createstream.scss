@@ -1,0 +1,178 @@
+$gradient-color: linear-gradient(
+  90deg,
+  #fe0000,
+  #f71f1f,
+  #e75353,
+  #f71f1f,
+  #fe0000,
+  #f71f1f
+);
+
+.cs-inner-div {
+  margin: auto;
+  // min-height: calc(100vh - 152px);
+  // width: 80%;
+  // max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  // align-items: center;
+  // width: 100%;
+  min-width: 300px;
+  max-width: 1200px;
+  // width: 100%;
+  margin: 0 auto;
+  // height: auto;
+  margin-bottom: 70px;
+  padding: 10px;
+  // padding-top: 120px;
+}
+.createstream-t-header {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+  padding-top: 90px;
+  font-family: "SpacePowerDemoRegular";
+}
+.cs {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 88vh;
+  z-index: -1;
+  // position: fixed;
+  background-image: linear-gradient(
+    0deg,
+    rgba(145, 9, 10, 1) 0%,
+    rgba(20, 20, 20, 1) 80%
+  );
+  //   padding: 30px;
+
+  .cs-left-container {
+    min-width: 60%;
+    width: 60%;
+    padding-top: 30px;
+    video.cs-video {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    button.cs-button {
+      margin: 0.7rem 0.5rem;
+      background: $gradient-color;
+      border: none;
+      font-family: "FontsFree-Net-Poppins-Regular";
+      border-radius: 5px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.4rem 1.5rem;
+      background-size: 600% 200%;
+      animation: gradient 4s linear infinite;
+      animation-direction: alternate;
+    }
+    button.cs-button:hover {
+      cursor: pointer;
+    }
+  }
+  .texttag {
+    font-family: "FontsFree-Net-Poppins-Regular";
+    font-size: 1rem;
+  }
+  .cs-right-container {
+    padding: 30px;
+    text-align: left;
+    font-family: "FontsFree-Net-Poppins-Regular";
+    width: 40%;
+    .space-to-upload-image {
+      height: auto;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(4px);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      padding: 6px;
+
+      svg {
+        fill: #fe0000;
+        height: 2.5rem;
+        width: 3rem;
+      }
+    }
+    input.cs-input {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(4px);
+      padding: 20px;
+      color: #ffffff;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      font-family: "FontsFree-Net-Poppins-Regular";
+    }
+
+    textarea.cs-textarea {
+      width: 100%;
+      font-family: "FontsFree-Net-Poppins-Regular";
+      // background: #292929;
+      outline: none;
+      background: rgba(255, 255, 255, 0.15);
+      // backdrop-filter: blur(4px);
+      border-radius: 10px;
+      padding: 2% 20px;
+      color: #ffffff;
+      border: none;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    .cs-label {
+      padding-bottom: 4%;
+      font-size: 1rem;
+      font-family: "FontsFree-Net-Poppins-Regular";
+    }
+    input[type="radio"]:checked {
+      background-color: red;
+      border: 2px solid red;
+    }
+    img.cs-uploaded-image {
+      height: 10rem;
+      width: 20rem;
+    }
+  }
+  .cs-formfield {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: "FontsFree-Net-Poppins-Regular";
+  }
+  input[type="radio"]#color {
+    accent-color: #fe0000;
+  }
+  #stream-lebel {
+    padding-bottom: 10px;
+    font-family: "FontsFree-Net-Poppins-Regular";
+  }
+}
+@media screen and (max-width: 1024px) {
+  .cs-inner-div {
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    min-width: 300px;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    height: auto;
+    padding: 60px;
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,130 @@
+$gradient-color: linear-gradient(
+  90deg,
+  #fe0000,
+  #f71f1f,
+  #e75353,
+  #f71f1f,
+  #fe0000,
+  #f71f1f
+);
+
+.navbar-main {
+  display: flex;
+  // width: 100%;
+  // min-width: 300px;
+  // max-width: 1500px;
+  //   position: fixed;
+  background-color: rgba(20, 20, 20, 1);
+  align-content: center;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0 auto;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "FontsFree-Net-Poppins-Regular";
+  z-index: 10 !important;
+
+  .navbar-left {
+    font-weight: 700;
+    font-size: 20px;
+
+    .navbar-logo {
+      font-family: "FontsFree-Net-Poppins-Regular";
+    }
+  }
+
+  .navbar-middle {
+    flex-grow: 1;
+
+    .searchbar {
+      margin-left: 20px;
+
+      input[type="text"] {
+        padding: 5px;
+      }
+    }
+  }
+
+  .navbar-right {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0px !important;
+      align-items: center;
+      align-content: center;
+      padding: 0;
+
+      li {
+        font-family: "FontsFree-Net-Poppins-Regular";
+        font-size: 1rem;
+        &.active {
+          background-color: white;
+          // color: black !important;
+          // border: 1px solid #fe0000;
+          padding: 5px 10px;
+          background: $gradient-color;
+          background-size: 600% 200%;
+          animation: gradient 4s linear infinite;
+          animation-direction: alternate;
+          border-radius: 10px;
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        .connect-btn {
+          font-size: 1rem;
+          color: white;
+          border: none;
+          cursor: pointer;
+          padding: 8px 10px;
+          background: $gradient-color;
+          background-size: 600% 200%;
+          animation: gradient 4s linear infinite;
+          animation-direction: alternate;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+//  ...................responsive.......................
+@media screen and (max-width: 1024px) {
+  .navbar-main {
+    font-size: 0.7rem;
+  }
+  .navbar-right {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      margin: 0px !important;
+      align-items: center;
+      align-content: center;
+    }
+  }
+  .navbar-left {
+    font-weight: 700;
+    font-size: 20px;
+
+    .navbar-logo {
+      width: 100%;
+      min-width: 200px;
+      max-width: 900px;
+    }
+    .navbar-logo > img {
+      width: 70%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-logo > img {
+    width: 70%;
+    height: 50px;
+  }
+}

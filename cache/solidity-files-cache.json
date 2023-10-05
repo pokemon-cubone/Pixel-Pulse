@@ -1,0 +1,75 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\lajja\\Desktop\\1Beat\\1-beat\\contracts\\OneBeat.sol": {
+      "lastModificationDate": 1659776936863,
+      "contentHash": "68049e4664f84aae1e722e913ffdcebe",
+      "sourceName": "contracts/OneBeat.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OneBeat"
+      ]
+    },
+    "C:\\Users\\lajja\\Desktop\\1Beat_V1\\1-beat\\contracts\\OneBeat.sol": {
+      "lastModificationDate": 1659853208939,
+      "contentHash": "fba486761a70bbc49aeff0136c8473ea",
+      "sourceName": "contracts/OneBeat.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OneBeat"
+      ]
+    }
+  }
+}

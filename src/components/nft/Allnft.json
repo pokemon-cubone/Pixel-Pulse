@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "user": "Lajja"
+  },
+  {
+    "id": "2",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "user": "Bhadresh"
+  },
+  {
+    "id": "3",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "user": "Emilly"
+  },
+  {
+    "id": "4",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "user": "Aakash"
+  },
+  {
+    "id": "5",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "user": "Rahul"
+  }
+]

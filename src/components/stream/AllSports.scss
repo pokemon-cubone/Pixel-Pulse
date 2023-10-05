@@ -1,0 +1,95 @@
+.stream-main-container {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 100vh;
+  z-index: -1;
+  // position: fixed;
+  background-image: linear-gradient(
+    0deg,
+    rgba(145, 9, 10, 1) 0%,
+    rgba(20, 20, 20, 1) 80%
+  );
+}
+.t-header {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+  font-family: "SpacePowerDemoRegular";
+}
+.p-header {
+  font-family: "FontsFree-Net-Poppins-Regular";
+}
+.stream-main-content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+  flex-wrap: wrap;
+  // gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-bottom: 3rem;
+}
+.stream-content {
+  width: 250px;
+  // background-color: whitesmoke;
+  // border: 1px solid black;
+  margin: 40px;
+  // padding: 30px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+}
+.stream-img-main {
+  margin: 0px;
+}
+.stream-img img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 20px;
+}
+.stream-user {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.stream-user img {
+  border-radius: 50%;
+  height: 30px;
+}
+.stream-title h4 {
+  text-align: left;
+  font-family: "FontsFree-Net-Poppins-Regular";
+  padding-left: 3.8rem;
+}
+.stream-img-name {
+  display: flex;
+  // color: black;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 10px;
+  span {
+    padding-left: 1rem;
+    font-family: "FontsFree-Net-Poppins-Regular";
+  }
+}
+.stream-date span {
+  margin-right: 1rem;
+  font-family: "FontsFree-Net-Poppins-Regular";
+}
+.stream-main-container-inner-div {
+  min-width: 300px;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  padding: 10px;
+  padding-top: 90px;
+}

@@ -1,0 +1,185 @@
+// $green-color: #2ee09a;
+$gradient-color: linear-gradient(
+  90deg,
+  #fe0000,
+  #f71f1f,
+  #e75353,
+  #f71f1f,
+  #fe0000,
+  #f71f1f
+);
+
+.profile-main-container {
+  width: 100%;
+  height: auto;
+  min-height: 120vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  // position: fixed;
+  background-image: linear-gradient(
+    0deg,
+    rgba(145, 9, 10, 1) 0%,
+    rgba(20, 20, 20, 1) 80%
+  );
+  .profile-main-container-inner-div {
+    min-width: 300px;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    min-height: 120vh;
+    padding: 10px;
+    padding-top: 90px;
+  }
+  .profile-first-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 30px;
+    // margin-bottom: 50px;
+    padding-bottom: 30px;
+    // border-bottom: 2px solid #2c3033;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    button.profile-edit-button {
+      margin: 1rem 0;
+      // background: none;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-family: "FontsFree-Net-Poppins-Regular";
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+
+      background: $gradient-color;
+      background-size: 600% 200%;
+      animation: gradient 4s linear infinite;
+      animation-direction: alternate;
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 100%;
+      }
+    }
+    button.profile-edit-button:hover {
+      cursor: pointer;
+    }
+    .profile-first-section-inside-one {
+      display: flex;
+    }
+    .profile-image {
+      //   margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding-right: 4rem;
+
+      #profile-image-id {
+        margin: 0;
+        color: white;
+        // border: 5px solid $green-color;
+        border-radius: 10px;
+      }
+    }
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 1.5rem;
+        border-left: 4px solid $gradient-color;
+        // padding-left: 20px;
+        margin: 0;
+        color: white;
+      }
+
+      .profile-nft-info {
+        font-size: 1rem;
+        // padding: 1rem 0;
+        font-weight: 600;
+        padding: 5% 0;
+        p {
+          margin: 0%;
+          padding: 5% 0;
+          color: white;
+          font-family: "FontsFree-Net-Poppins-Regular";
+        }
+      }
+
+      p {
+        text-align: left;
+      }
+      button.profile-btn {
+        margin: 1rem 0;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-family: "FontsFree-Net-Poppins-Regular";
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        background: $gradient-color;
+        background-size: 600% 200%;
+        animation: gradient 4s linear infinite;
+        animation-direction: alternate;
+      }
+      button.profile-btn:hover {
+        background: $gradient-color;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+  .profile-second-section {
+    margin-top: 20px;
+
+    button.profile-second-btns {
+      background: none;
+      border: none;
+      color: white;
+      font-family: "FontsFree-Net-Poppins-Regular";
+      font-size: 1rem;
+      font-weight: 500;
+      // padding: 0.5rem 1rem;
+      padding: 0 1rem 1rem 1rem;
+      margin-right: 1rem;
+    }
+    button.profile-second-btns:last-of-type {
+      margin-right: 0;
+    }
+    button.profile-second-btns:hover {
+      background: none;
+      border: none;
+      color: #fe0000;
+      cursor: pointer;
+    }
+
+    button.active {
+      color: #fe0000;
+      border-bottom: 2px solid #fe0000;
+    }
+    button.active:hover {
+      background: none;
+      border: none;
+      // color: #ff0083;
+      cursor: pointer;
+      // border-bottom: 2px solid #ff0083;
+    }
+  }
+}

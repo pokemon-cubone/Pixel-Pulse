@@ -1,0 +1,132 @@
+$gradient-color: linear-gradient(
+  90deg,
+  #ff3ba0,
+  #eb0079,
+  #ff0083,
+  #ffc4e2,
+  #ff3ba0,
+  #eb0079,
+  #b1005b
+);
+
+.ps-main-container {
+  padding-top: 1.5rem;
+  max-width: 100%;
+}
+
+.ps-grid-container {
+  padding-top: 1rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-bottom: 1rem;
+}
+.ps-grid-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .ps-video-image {
+    position: relative;
+
+    .middle {
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .text {
+      background-color: white;
+      padding: 16px 32px;
+      border-radius: 10px;
+      svg.ps-video-play-svg {
+        fill: red;
+      }
+    }
+  }
+  .ps-video-image:hover {
+    cursor: pointer;
+    .middle {
+      opacity: 0.7;
+    }
+    img {
+      opacity: 0.5;
+    }
+  }
+
+  img {
+    border-radius: 20px;
+    transition: 0.5s ease;
+    opacity: 1;
+  }
+
+  h3 {
+    text-align: left;
+    margin: 0%;
+    padding: 5% 0%;
+    font-size: 1rem;
+  }
+  .ps-nft-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    .ps-nft-div-inside-one {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+  p {
+    padding: 5% 0%;
+    margin: 0%;
+    color: white;
+    font-family: "FontsFree-Net-Poppins-Regular";
+  }
+  h6 {
+    margin: 0%;
+    padding: 5% 0%;
+    font-size: medium;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    font-family: "FontsFree-Net-Poppins-Regular";
+  }
+  button {
+    margin: 0.7rem 0;
+    background: linear-gradient(
+      90deg,
+      #fe0000,
+      #f71f1f,
+      #e75353,
+      #f71f1f,
+      #fe0000,
+      #f71f1f
+    );
+    font-family: "FontsFree-Net-Poppins-Regular";
+    background-size: 600% 200%;
+    animation: gradient 4s linear infinite;
+    animation-direction: alternate;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background-size: 600% 200%;
+    animation: gradient 4s linear infinite;
+    animation-direction: alternate;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+}

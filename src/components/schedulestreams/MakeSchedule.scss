@@ -1,0 +1,167 @@
+$gradient-color: linear-gradient(
+  90deg,
+  #fe0000,
+  #f71f1f,
+  #e75353,
+  #f71f1f,
+  #fe0000,
+  #f71f1f
+);
+
+.image-hero {
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  width: 58%;
+  min-width: 414px;
+  padding: 35px 15px;
+  left: 50%;
+  top: 60%;
+  margin: 0 auto;
+  color: #ffffff !important;
+  border-radius: none;
+  // box-shadow: 20px 30px 25px rgb(0, 0, 0 / 15%);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.make-schedule-background-inner-div {
+  min-width: 300px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: 10px;
+  padding-top: 90px;
+  margin-bottom: 70px;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  text-align: center;
+  // padding-bottom: 20px;
+  font-family: "SpacePowerDemoRegular";
+  // color: #ffffff;
+}
+
+form.ms-form {
+  width: 100%;
+  position: relative;
+  margin: 30px auto 0 auto;
+}
+.row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px 30px;
+  margin-bottom: 20px;
+}
+
+input.ms-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #fe0000;
+  background: none;
+  padding: 16px 0 10px 0;
+  font-size: 1rem;
+  outline: 0;
+  width: 80%;
+  font-family: "FontsFree-Net-Poppins-Regular";
+  color: white;
+  margin-top: 20px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+::placeholder {
+  color: white;
+  font-size: 1rem;
+}
+textarea {
+  resize: none;
+  font-family: "FontsFree-Net-Poppins-Regular";
+  font-size: 1rem;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #fe0000;
+}
+.action-button {
+  background: $gradient-color;
+  border: none;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0.5rem 1rem;
+  width: 20%;
+  font-family: "FontsFree-Net-Poppins-Regular";
+  text-align: center;
+  // text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 600% 200%;
+  animation: gradient 4s linear infinite;
+  animation-direction: alternate;
+  color: white;
+  // box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.fileupload {
+  height: 100%;
+  width: 100%;
+}
+.start {
+  font-size: 1rem;
+  font-family: "FontsFree-Net-Poppins-Regular";
+}
+#start {
+  font-size: 0.9rem;
+  margin-left: 5px;
+  font-family: "FontsFree-Net-Poppins-Regular";
+}
+.ms-input {
+  font-family: "FontsFree-Net-Poppins-Regular";
+}
+.date-time {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.make-schedule-background {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  z-index: -1;
+  // position: fixed;
+  background-image: linear-gradient(
+    0deg,
+    rgba(145, 9, 10, 1) 0%,
+    rgba(20, 20, 20, 1) 80%
+  );
+}
+@media screen and (max-width: 1024px) {
+  .date-time {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
